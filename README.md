@@ -12,7 +12,8 @@ Kenneth Lai - https://github.com/KennethJLai8
 ## Project Description
 ○ Why is it important or interesting to you? 
 
-   - Playing video games has been a part of our lives, and we see video game production as a possible career path.
+   - Playing video games has been a part of our lives, and we see video game production as a possible career path. Because of this we would like to use
+     the skills that we have accumulated to make an RPG style game.
 
 ○ What languages/tools/technologies do you plan to use? 
 
