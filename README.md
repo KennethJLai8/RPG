@@ -26,7 +26,7 @@ Kenneth Lai - https://github.com/KennethJLai8
 
    - Composite
 
-   - We will use this design pattern to design various characters, armor with similar features. There might be a lot of redundancy when creating similar            characters, armor. With the composite design pattern, we can implement shared features among created objects with an option to add unique features. For        example, we are anticipating creating various characters with different attributes.
+   - We will use this design pattern to design various characters and armor with similar features. There might be a lot of redundancy when creating similar          characters andarmor. With the composite design pattern, we can implement shared features among created objects with an option to add unique features.          For example, we are anticipating creating various characters with different attributes such as a knight and a wizard.
 
    - Strategy
 
