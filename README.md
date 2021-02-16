@@ -35,7 +35,7 @@ Kenneth Lai - https://github.com/KennethJLai8
 
 
   ## Phase II
-  ![alt text](https://imgur.com/o0v5Nqb)
+  ![Alt Text](Composite.png)
   
   Composite
 
