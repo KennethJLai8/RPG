@@ -35,18 +35,22 @@ Kenneth Lai - https://github.com/KennethJLai8
 
 
   ## Phase II
-  ![Alt Text](Composite.png)
   
-  Composite
+  
+Composite
 
 We are mainly using the composite pattern to edit the characters involved in our RPG game. Enemies and ally characters share similar attributes which can be inherited from the base class “Characters”. We have one level of inheritance per character. In the individual character classes(forbidden knight, Troll etc.), we will modify the different attributes to suit our needs.
 
+![Alt Text](Composite.png)
 
-![Alt Text](Strategy.png)
+
+
 
 Strategy
 
 We are using the strategy pattern to declare player and enemy actions in combat. We ultimately want the characters of this game to have three different types of actions (options) during each turn of the fight, but some enemies (such as the pistol shrimp) will have access to some variations of these three combat options. This also applies to each protagonist class, as the way in which a crowd-control, attack, or block is performed depends on which character you choose. 
+
+![Alt Text](Strategy.png)
 
 
  
