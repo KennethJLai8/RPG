@@ -34,7 +34,7 @@ Kenneth Lai - https://github.com/KennethJLai8
    - We will use the strategy design pattern to implement unique moves and abilities among different playable characters (RPG classes). Characters will be able      to have basic attacks, but having the strategy design pattern will make it easy to override basic stats if there are any class-specific banes and boons of      individual characters. We can also use this design pattern to randomize enemy attacks. A problem we anticipate with this design pattern is having to            repeat code for separate stats that may not be included within the player class.  
 
 
-  ## Phase II
+  ## Design Documents
   
   
 Composite
