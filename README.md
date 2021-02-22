@@ -41,7 +41,7 @@ Composite
 
 We are mainly using the composite pattern to edit the characters involved in our RPG game. Enemies and ally characters share similar attributes which can be inherited from the base class “Characters”. We have one level of inheritance per character. In the individual character classes(forbidden knight, Troll etc.), we will modify the different attributes to suit our needs.
 
-![Alt Text](Composite.png)
+![Alt Text](revised_composite.png)
 
 
 
