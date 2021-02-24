@@ -4,11 +4,9 @@
 class narrative {
     private:
         string player;
-        string enemy;
     public:
         narrative(string newPlayer){
             player = newPlayer;
-            enemy = "troll";
         }
 
         // Game introduction
@@ -62,7 +60,7 @@ class narrative {
                     Forbidden Kingdom. He's not very powerful, but the ";
                 << player << " must retrieve the forbidden jewel from the
                             trolls stomach to lower the Forbidden Bridge to
-                            reach the Forbidden Kingdom" << "\n";
+                            reach the Forbidden Kingdom." << "\n";
         }
 
         // Troll battle
@@ -86,15 +84,32 @@ class narrative {
         }
 
         // Randomized battle dialogue
-        void battleDialogue1(ostream& out) const {
-
+        void battleDialogue1(ostream& out, string enemy) const {
+            out << enemy << ": Do you think even the worst person can change?\n
+                            That everybody can be a good person, if they just
+                            try?\n Look. I gave up trying to go back a long
+                            time ago.";
         }
 
-        void battleDialogue2(ostream& out) const {
-
+        void battleDialogue2(ostream& out, string enemy) const {
+            out << enemy << ": Do you wanna have a bad time?\n 'Cause if you take
+                            another step forward. . .\n You are REALLY not
+                            going to like what happens next.\n";
         }
 
         void battleDialogue3(ostream& out) const {
-
+            out << enemy << ": Always wondered why people never use their
+                            strongestattack first.\n";
         }
+
+        void battleDialogue4(ostream& out, string enemy) const {
+            out << enemy << ": What? You think im just gonna stand there and
+                            take it?\n";
+        }
+
+        void battleDialogue5(ostream& out, string enemy) const {
+            out << enemy << ": Sorry, old friend.\n This is why i never make
+                            promises.\n"
+        }
+
 };
