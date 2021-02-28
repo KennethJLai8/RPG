@@ -8,7 +8,7 @@ class Character {
 private:
 string name;
 int hp;
-int armor;
+string armor;
 int attack;
 int crowd_control;
 
@@ -17,13 +17,13 @@ public:
 Character();
 
 int setHp();
-int setArmor();
+//int setArmor();
 int setAttack();
 int crowd_control();
 
 
 int getHp();
-int getArmor();
+//int getArmor();
 int getAttack;
 int getCrowdControl;
 
