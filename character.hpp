@@ -9,8 +9,8 @@ private:
 string name;
 int hp;
 string armor;
-int attack;
-int crowd_control;
+string attack;
+string crowd_control;
 
 public:
 
@@ -18,14 +18,14 @@ Character();
 
 int setHp();
 //int setArmor();
-int setAttack();
-int crowd_control();
+string setAttack();
+string crowd_control();
 
 
 int getHp();
 //int getArmor();
-int getAttack;
-int getCrowdControl;
+string getAttack;
+string getCrowdControl;
 
 };
 
