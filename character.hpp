@@ -8,21 +8,22 @@ class Character {
 private:
 string name;
 int hp;
-string armor;
-string attack;
-string crowd_control;
+string armor; //what they're wearing
+string attack; //description of attack
+string crowd_control; //description of crowd control
+string block; //description of block
 
 public:
 
 Character();
 
-int setHp();
+//setHp();
 //int setArmor();
 string setAttack();
 string crowd_control();
 
 
-int getHp();
+//getHp();
 //int getArmor();
 string getAttack;
 string getCrowdControl;
