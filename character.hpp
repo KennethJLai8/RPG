@@ -5,7 +5,7 @@
 using namespace std;
 
 class Character {
-private:
+protected:
 string name;
 int hp;
 string armor; //what they're wearing
@@ -14,7 +14,6 @@ string crowd_control; //description of crowd control
 string block; //description of block
 
 public:
-
 Character();
 
 //setHp();
