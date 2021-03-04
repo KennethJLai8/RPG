@@ -19,15 +19,17 @@ Character();
 
 //setHp();
 //int setArmor();
-string setAttack();
-string crowd_control();
+string set_attack();
+string set_cc();
+string set_block();
 
 
 //getHp();
 //int getArmor();
-string getAttack;
-string getCrowdControl;
-
+string get_Attack();
+string get_cc();
+string get_block();
+  
 };
 
 #endif
