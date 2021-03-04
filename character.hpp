@@ -19,16 +19,16 @@ Character();
 
 //setHp();
 //int setArmor();
-string set_attack();
-string set_cc();
-string set_block();
+virtual string set_attack() = 0;
+virtual string set_cc() = 0;
+virtual string set_block() = 0;
 
 
 //getHp();
 //int getArmor();
-string get_Attack();
-string get_cc();
-string get_block();
+virtual string get_Attack() = 0;
+virtual string get_cc() = 0;
+virtual string get_block() = 0;
   
 };
 
