@@ -1,7 +1,7 @@
 #ifndef __SHRIMP_HPP__
 #define __SHRIMP_HPP__
 
-class shrimp : public Character
+class PistolShrimp : public Character
 {
     string name = "shrimp";
     int hp = 10;
