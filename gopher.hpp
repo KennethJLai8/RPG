@@ -5,7 +5,7 @@
 #include <string>
 using namespace std;
 
-class Gopher : public Character
+class ForbiddenGopher : public Character
 {
     private:
       //string name;
