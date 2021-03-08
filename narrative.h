@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 
@@ -57,7 +56,7 @@ class narrative {
         // Generic Troll Intro
         void trollIntro(ostream& out) const {
             out << "The Generic Troll protects the bridge that leads to the"
-                  <<  " Forbidden Kingdom. He's not very powerful, but the"
+                  <<  " Forbidden Kingdom. He's not very powerful, but the "
                 << player << " must retrieve the forbidden jewel from the"
                           <<  " trolls stomach to lower the Forbidden Bridge to"
                           << " reach the Forbidden Kingdom." << "\n";
@@ -80,6 +79,8 @@ class narrative {
         }
 
         void epilogue(ostream& out) const {
+
+          out << "Everyone lived happily ever after. The End";
 
         }
 
