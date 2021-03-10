@@ -16,6 +16,7 @@
 #include "shrimp.hpp"
 #include "battle.hpp"
 #include "gtest/gtest.h"
+#include <iostream>
 
 TEST(BattleTest, ConstructorTest) {
     Character* player = new ForbiddenKnight();

@@ -6,6 +6,7 @@
 #include <iostream>
 #include "gtest/gtest.h"
 
+
 TEST(NarrativeTest, introTest) {
     std::string player = "frog";
     Narrative* story = new Narrative(player);
