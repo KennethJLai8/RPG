@@ -16,7 +16,7 @@ class ForbiddenGopher : public Character
     
     public:
       //ForbiddenGopher(){
-        string name = "gopher";
+        string name = " Forbidden Gopher";
         int hp = 10;
         string armor = "super thick fur";
         string block = "forbidden mesh wire";

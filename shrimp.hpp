@@ -3,7 +3,7 @@
 
 class PistolShrimp : public Character
 {
-    string name = "shrimp";
+    string name = " Shrimp";
     int hp = 10;
     string block = "Harden";
     string armor = "forbidden shell";
@@ -34,6 +34,8 @@ class PistolShrimp : public Character
     {
       return cc;
     }
+
+	~PistolShrimp(){};
 };
 
 #endif //__PISTOLSHRIMP_HPP__
