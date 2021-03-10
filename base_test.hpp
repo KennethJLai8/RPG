@@ -34,19 +34,19 @@ TEST(getNameTest, wizardGetName) {
 
 TEST(getHpTest, archerGetHp) {
 	Character* test = new ForbiddenArcher();
-	EXPECT_EQ(test->get_hp(), 5);
+	EXPECT_EQ(test->get_hp(), 40);
 }
 
 
 TEST(getHpTest, knightGetHp) {
 	Character* test = new ForbiddenKnight();
-	EXPECT_EQ(test->get_hp(), 10);
+	EXPECT_EQ(test->get_hp(), 40);
 }
 
 
 TEST(getHpTest, wizardGetHp) {
 	Character* test = new ForbiddenWizard();
-	EXPECT_EQ(test->get_hp(), 8);
+	EXPECT_EQ(test->get_hp(), 40);
 }
 
 //getBlockTest
