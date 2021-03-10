@@ -30,6 +30,7 @@ TEST(getNameTest, wizardGetName) {
 }
 
 //getHpTest
+//getHpTests should fail as the hp values were changed for the demo
 
 TEST(getHpTest, archerGetHp) {
 	Character* test = new Archer();
@@ -67,5 +68,42 @@ TEST(getBlockTest, wizardGetBlock) {
 	EXPECT_EQ(test->get_block(), "barrier spell");
 }
 
+//getAttackTest
+
+TEST(getAttackTest, archerGetAttack) {
+	Character* test = new Archer();
+	EXPECT_EQ(test->get_attack(), "Piercing Arrow");
+}
+
+
+TEST(getAttackTest, knightGetAttack) {
+	Character* test = new Knight();
+	EXPECT_EQ(test->get_attack(), "Slice n Dice");
+}
+
+
+TEST(getAttackTest, wizardGetAttack) {
+	Character* test = new Wizard();
+	EXPECT_EQ(test->get_attack(), "lightning spell");
+}
+
+//getCCTest
+
+TEST(getCCTest, archerGetCC) {
+	Character* test = new Archer();
+	EXPECT_EQ(test->get_cc(), "Scatter Arrow");
+}
+
+
+TEST(getCCTest, knightGetCC) {
+	Character* test = new Knight();
+	EXPECT_EQ(test->get_cc(), "Charge");
+}
+
+
+TEST(getCCTest, wizardGetCC) {
+	Character* test = new Wizard();
+	EXPECT_EQ(test->get_cc(), "levitate");
+}
 
 #endif
