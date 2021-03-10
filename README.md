@@ -61,7 +61,15 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Kanban board. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ > Character Selection
+ > 
+ > ![forbiddenCharacterSelect](https://user-images.githubusercontent.com/77028709/110601263-9c47c400-8139-11eb-8220-df4ec0e403fd.PNG)
+ > 
+ > The Gopher Battle
+ > 
+ > ![forbiddenGopherBattle](https://user-images.githubusercontent.com/77028709/110601401-bbdeec80-8139-11eb-8b95-714955f5c677.PNG)
+ > 
+
  ## Installation/Usage
  > Welcome to the "Adventures of the Forbidden Knight." Lone mortal, before you embark on your journey to the Pistol Shrimp's lair, there are some steps you need to take. 
  >  - Make sure you have a C++ compiler (this game is known to run within the hammer shell).
