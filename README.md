@@ -65,6 +65,10 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  > Valgrind: Memcheck Clean
  > 
  > ![Memcheck clean](valgrind_clean.png)
+ > 
+ > Battle Sequence Example
+ > 
+ > ![battle sequence](battle_sequence.png)
 
  ## Installation/Usage
  > Welcome to the "Adventures of the Forbidden Knight." Lone mortal, before you embark on your journey to the Pistol Shrimp's lair, there are some steps you need to take. 
