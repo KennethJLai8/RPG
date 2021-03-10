@@ -4,6 +4,8 @@
 #include <string>
 #include "narrative.hpp"
 #include <iostream>
+#include "gtest/gtest.h"
+
 
 TEST(NarrativeTest, introTest) {
     std::string player = "frog";
