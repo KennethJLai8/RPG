@@ -65,7 +65,7 @@ class Battle {
             }
         }
 
-        void checkShrimpBattle(){
+        void checkShrimpBattle(ostream& out) const{
             if (enemy->get_name() == " Shrimp") {
                 // trigger cut scene
                 if (enemyHP <= 5){
@@ -106,7 +106,7 @@ class Battle {
     			}
 
                 move_selection.print(cout);
-                checkShrimpBattle();
+                checkShrimpBattle(cout);
                 outcome();
                 getHP(cout);
             };
