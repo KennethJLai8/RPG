@@ -62,6 +62,9 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  > 
  > ![forbiddenGopherBattle](https://user-images.githubusercontent.com/77028709/110601401-bbdeec80-8139-11eb-8b95-714955f5c677.PNG)
  > 
+ > Valgrind: Memcheck Clean
+ > 
+ > ![Memcheck clean](valgrind_clean.png)
 
  ## Installation/Usage
  > Welcome to the "Adventures of the Forbidden Knight." Lone mortal, before you embark on your journey to the Pistol Shrimp's lair, there are some steps you need to take. 
