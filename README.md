@@ -53,15 +53,6 @@ We are using the strategy pattern to declare player and enemy actions in combat.
 ![Alt Text](final_strat.png)
 
 
- 
- > ## Phase III
- > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
- > * Before the meeting you should perform a sprint plan like you did in Phase II
- > * In the meeting with your TA you will discuss: 
- >   - How effective your last sprint was (each member should talk about what they did)
- >   - Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- >   - Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- >   - What tasks you are planning for this next sprint.
 
  > ## Final deliverable
  > All group members will give a demo to the TA during lab time. The TA will check the demo and the project GitHub repository and ask a few questions to all the team members. 
@@ -74,5 +65,5 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ With the use of google test, we are able to compare expected output or values with actual results. We would manually create objects or initialize values and use the tools in google test to compare the outcomes. One of the most common tools being EXPECT_EQ.
  
