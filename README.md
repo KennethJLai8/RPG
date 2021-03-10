@@ -63,7 +63,17 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ > Welcome to the "Adventures of the Forbidden Knight." Lone mortal, before you embark on your journey to the Pistol Shrimp's lair, there are some steps you need to take. 
+ >  - Make sure you have a C++ compiler (this game is known to run within the hammer shell).
+ >  - Use the ./game command to run the executable for the game.
+ > Now that you are ready to embark on a Forbidden quest, you must learn some of the mechanics of this game.
+ >  - The game will prompt you to select your class, this will determine how difficult you want the game to be. You may choose from Forbiddenator the Knight, Arthur the Archer, and Merlin the Wizard.
+ >  - The combat system fundamentally pertains to the rules as follows: 
+ >    - There are three options: Attack, Crowd-Control (CC), Block. 
+ >    - Attack beats CC, CC beats Block, and Block beats Attack. The enemies of this Forbidden land will also select moves from these three options, so if you end up winning a "trade" from the combinations listed you can deal a point of damage.
+ >    - Conversely, you can receive damage by losing a "trade" against the enemy. Be careful however, as once your health points drop to zero, your soul will succumb to the desecrate land of Forbiddeness, allowing for the creatures to live another day.
+ >    - Unlike a traditional RPG, you will not heal after every battle. Your health points are set from the beginning, so you must manage your health throughout the entire game rather than for each battle, because in the land of the Forbidden you only get one soul.
+ > Good luck, may you seek redemption for your Forbiddeness some day.      
  ## Testing
  With the use of google test, we are able to compare expected output or values with actual results. We would manually create objects or initialize values and use the tools in google test to compare the outcomes. One of the most common tools being EXPECT_EQ.
  
