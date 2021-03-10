@@ -16,7 +16,6 @@
 #include "shrimp.hpp"
 #include "battle.hpp"
 #include "gtest/gtest.h"
-#include <iostream>
 
 TEST(BattleTest, ConstructorTest) {
     Character* player = new ForbiddenKnight();
@@ -34,5 +33,33 @@ TEST(BattleTest, ConstructorTest) {
 
     EXPECT_EQ(s.str(), test.str());
 }
+
+TEST(BattleTest, continueBattleTest) {
+    Character* player = new ForbiddenKnight();
+    Character* gopher = new ForbiddenGopher();
+	int enemyHP = gopher->get_hp();
+	int playerHP = player->get_hp();
+    Battle* gopherBattle = new Battle(gopher, player, enemyHP, playerHP);
+
+    EXPECT_EQ(gopherBattle->continueBattle(), true);
+}
+
+TEST(BattleTest, checkShrimpBattle) {
+    Character* player = new ForbiddenKnight();
+    Character* shrimp = new ForbiddenGopher();
+	int enemyHP = 4;
+	int playerHP = player->get_hp();
+    Battle* gopherBattle = new Battle(shrimp, player, enemyHP, playerHP);
+
+    std::stringstream s;
+    std::stringstream test;
+
+    gopherBattle->checkShrimpBattle(s);
+
+    test << "";
+
+    EXPECT_EQ(s.str(), test.str());
+}
+
 
 #endif //__BATTLE_TEST_HPP__
