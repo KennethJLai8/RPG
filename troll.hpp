@@ -6,7 +6,7 @@ using namespace std;
 
 class GenericTroll : public Character
 {
-    string name = "troll";
+    string name = " Troll";
     int hp = 10;
     string armor = "forbidden cloak";
     string block = "Club";
@@ -37,6 +37,8 @@ class GenericTroll : public Character
     {
       return cc;
     }
+
+	~GenericTroll(){}
 
 };
 

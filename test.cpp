@@ -1,5 +1,6 @@
 #include "gtest/gtest.h"
-#include "base_test.hpp"
+#include "narrative_test.hpp"
+#include "battle_test.hpp"
 
 
 int main(int argc,char **argv){

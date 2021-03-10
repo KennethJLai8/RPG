@@ -4,7 +4,7 @@
 class ForbiddenWizard : public Character
 {
     string name = "Merlin";
-    int hp = 8;//medium
+    int hp = 40;//medium
     string block = "barrier spell";
     string armor = "enchanted robe";
     string attack = "lightning spell";
