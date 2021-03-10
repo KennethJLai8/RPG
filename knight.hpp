@@ -8,7 +8,7 @@ using namespace std;
 class ForbiddenKnight : public Character
 {
     string name = "Forbiddenator";
-    int hp = 10;//easy
+    int hp = 40;//easy
     string armor = "Dragon Scale Armor";
     string block = "Shield";
     string cc = "Charge";
