@@ -73,7 +73,7 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  >    - Attack beats CC, CC beats Block, and Block beats Attack. The enemies of this Forbidden land will also select moves from these three options, so if you end up winning a "trade" from the combinations listed you can deal a point of damage.
  >    - Conversely, you can receive damage by losing a "trade" against the enemy. Be careful however, as once your health points drop to zero, your soul will succumb to the desecrate land of Forbiddeness, allowing for the creatures to live another day.
  >    - Unlike a traditional RPG, you will not heal after every battle. Your health points are set from the beginning, so you must manage your health throughout the entire game rather than for each battle, because in the land of the Forbidden you only get one soul.
- ## Good luck, may you seek redemption for your Forbiddeness some day.      
+ > ## Good luck, may you seek redemption for your Forbiddeness some day.      
  ## Testing
  With the use of google test, we are able to compare expected output or values with actual results. We would manually create objects or initialize values and use the tools in google test to compare the outcomes. One of the most common tools being EXPECT_EQ.
  
