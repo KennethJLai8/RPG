@@ -1,7 +1,8 @@
-#ifndef__CC_TEST_HPP__
-#define__CC_TEST_HPP__
+#ifndef __CC_TEST_HPP__
+#define __CC_TEST_HPP__
 
-
+#include <iostream>
+#include "gtest/gtest.h"
 #include "attack.hpp"
 #include "behavior.hpp"
 #include "block.hpp"
@@ -17,103 +18,113 @@
 #include "shrimp.hpp"
 #include "battle.hpp"
 #include <string>
+#include <sstream>
 
 using namespace std;
 
-
-
-
-
-
-
-
-TEST(CCTest, GopherTest)
-{
+TEST(CCTest, GopherCCTest)
+{   
     Behavior move_selection;
     Character* gopher = new ForbiddenGopher;
     
     move_selection.set_selection(new CC(gopher));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "mystic finisher");
+    EXPECT_EQ(s.str(), "gopher uses mystic finisher\n");
 
 }
 
-TEST(CCTest, TrollTest)
-{
+TEST(CCTest, TrollCCTest)
+{   
     Behavior move_selection;
     Character* troll = new GenericTroll();
     
     move_selection.set_selection(new CC(troll));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "trollstice");
+    EXPECT_EQ(s.str(), "troll uses trollstice\n");
 
 }
 
-TEST(CCTest, ShrimpTest)
-{
+TEST(CCTest, ShrimpCCTest)
+{   
     Behavior move_selection;
     Character* shrimp = new PistolShrimp;
     
     move_selection.set_selection(new CC(shrimp));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "bubbles");
+    EXPECT_EQ(s.str(), "shrimp uses bubbles\n");
 
 }
 
-TEST(CCTest, KnightTest)
+TEST(CCTest, KnightCCTest)
 {
     Behavior move_selection;
     Character* knight = new ForbiddenKnight;
-    
+
     move_selection.set_selection(new CC(knight));
-    
+
     stringstream s;
-    
-    EXPECT_EQ(move_selection.print(s), "Charge");
+    move_selection.print(s);
+
+    EXPECT_EQ(s.str(), "Forbiddenator uses Charge\n");
 
 }
 
-TEST(CCTest, ArcherTest)
+TEST(CCTest, ArcherCCTest)
 {
     Behavior move_selection;
     Character* archer = new ForbiddenArcher();
-    
+
     move_selection.set_selection(new CC(archer));
-    
+
     stringstream s;
-    
-    EXPECT_EQ(move_selection.print(s), "Scatter Arrow");
+    move_selection.print(s);
+
+    EXPECT_EQ(s.str(), "Arthur uses Scatter Arrow\n");
 
 }
 
-TEST(CCTest, WizardTest)
+TEST(CCTest, WizardCCTest)
 {
     Behavior move_selection;
     Character* wizard = new ForbiddenWizard();
-    
+
     move_selection.set_selection(new CC(wizard));
-    
+
     stringstream s;
-    
-    EXPECT_EQ(move_selection.print(s), "levitate");
+    move_selection.print(s);
+
+    EXPECT_EQ(s.str(), "Merlin uses levitate\n");
 
 }
 
-TEST(CCTest, NullTest)
-{
-    Behavior move_selection;
-    Character* fail = nullptr;
-    
-    move_selection.set_selection(new CC(fail));
-    
-    stringstream s;
-    
-    EXPECT_EQ(move_selection.print(s), nullptr);
 
-}#endif
+
+
+
+
+
+
+/*
+ * TEST(CCTest, NullTest)
+ * {
+ *     Behavior move_selection;
+ *         Character* fail = nullptr;
+ *             
+ *                 move_selection.set_selection(new CC(fail));
+ *                     
+ *                         stringstream s;
+ *                             move_selection.print(s);
+ *                                 
+ *                                     EXPECT_EQ(s.str(), nullptr);
+ *                                     }
+ *                                     */
+#endif
