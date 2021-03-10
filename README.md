@@ -52,10 +52,6 @@ We are using the strategy pattern to declare player and enemy actions in combat.
 
 ![Alt Text](final_strat.png)
 
-
-
- > ## Final deliverable
-
  
  ## Screenshots
  > Character Selection
