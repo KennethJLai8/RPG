@@ -4,10 +4,10 @@ SET(CMAKE_CXX_STANDARD 11)
 
 ADD_SUBDIRECTORY(googletest)
 
-##ADD_EXECUTABLE(test test.cpp)
+ADD_EXECUTABLE(test test.cpp)
 
 ADD_EXECUTABLE(game main.cpp)
 
-TARGET_LINK_LIBRARIES(game gtest)
-TARGET_COMPILE_DEFINITIONS(game PRIVATE gtest_disable_pthreads=ON)
+TARGET_LINK_LIBRARIES(test gtest)
+TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
 
