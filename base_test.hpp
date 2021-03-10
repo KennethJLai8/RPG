@@ -1,5 +1,5 @@
-#ifndef BASE_TEST_HPP
-#define BASE_TEST_HPP
+#ifndef __BASE_TEST_HPP__
+#define __BASE_TEST_HPP__
 
 #include "character.hpp"
 #include "archer.hpp"

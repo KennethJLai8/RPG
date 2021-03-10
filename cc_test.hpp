@@ -32,7 +32,7 @@ TEST(CCTest, GopherCCTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "gopher uses mystic finisher\n");
+    EXPECT_EQ(s.str(), " Forbidden Gopher uses mystic finisher\n");
 
 }
 
@@ -46,7 +46,7 @@ TEST(CCTest, TrollCCTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "troll uses trollstice\n");
+    EXPECT_EQ(s.str(), " Troll uses trollstice\n");
 
 }
 
@@ -60,7 +60,7 @@ TEST(CCTest, ShrimpCCTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "shrimp uses bubbles\n");
+    EXPECT_EQ(s.str(), " Shrimp uses bubbles\n");
 
 }
 
