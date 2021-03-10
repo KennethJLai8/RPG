@@ -61,5 +61,15 @@ TEST(BattleTest, checkShrimpBattle) {
     EXPECT_EQ(s.str(), test.str());
 }
 
+TEST(BattleTest, continueGame) {
+    Character* player = new ForbiddenKnight();
+    Character* gopher = new ForbiddenGopher();
+	int enemyHP = gopher->get_hp();
+	int playerHP = player->get_hp();
+    Battle* gopherBattle = new Battle(gopher, player, enemyHP, playerHP);
+
+    EXPECT_TRUE(gopherBattle->continueGame());
+}
+
 
 #endif //__BATTLE_TEST_HPP__
