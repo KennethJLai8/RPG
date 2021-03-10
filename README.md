@@ -62,9 +62,13 @@ We are using the strategy pattern to declare player and enemy actions in combat.
  
  ## Screenshots
  > Character Selection
+ > 
  > ![forbiddenCharacterSelect](https://user-images.githubusercontent.com/77028709/110601263-9c47c400-8139-11eb-8220-df4ec0e403fd.PNG)
+ > 
  > The Gopher Battle
+ > 
  > ![forbiddenGopherBattle](https://user-images.githubusercontent.com/77028709/110601401-bbdeec80-8139-11eb-8b95-714955f5c677.PNG)
+ > 
 
  ## Installation/Usage
  > Welcome to the "Adventures of the Forbidden Knight." Lone mortal, before you embark on your journey to the Pistol Shrimp's lair, there are some steps you need to take. 
