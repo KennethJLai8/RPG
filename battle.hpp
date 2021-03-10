@@ -20,6 +20,7 @@ class Battle {
             this->player = curPlayer;
             enemyHP = enemyHealth;
             playerHP = playerHealth;
+            randomizer = 0;
         }
 
         // input variable setter
@@ -33,9 +34,9 @@ class Battle {
         }
 
         // display character health
-        void getHP(){
-            cout << enemy->get_name()<< " HP: " << enemyHP << "\n";
-            cout << " Player HP: " << playerHP << "\n";
+        void getHP(ostream& out) const {
+            out << enemy->get_name()<< " HP: " << enemyHP << "\n"
+                << " Player HP: " << playerHP << "\n";
         }
 
         // returns outcome of the battle
@@ -107,7 +108,7 @@ class Battle {
                 move_selection.print(cout);
                 checkShrimpBattle();
                 outcome();
-                getHP();
+                getHP(cout);
             };
         }
 
