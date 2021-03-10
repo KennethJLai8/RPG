@@ -2,8 +2,8 @@
 #define __ATTACK_TEST_HPP__
 
 
-
-
+#include <iostream>
+#include "gtest/gtest.h"
 #include "attack.hpp"
 #include "behavior.hpp"
 #include "block.hpp"
@@ -19,6 +19,7 @@
 #include "shrimp.hpp"
 #include "battle.hpp"
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -31,8 +32,9 @@ TEST(AttackTest, GopherTest)
     move_selection.set_selection(new Attack(gopher));
     
     stringstream s;
+    move_selection.print(s);	
     
-    EXPECT_EQ(move_selection.print(s), "catastrophe");
+    EXPECT_EQ(s.str(), "gopher uses catastrophe\n");
 
 }
 
@@ -44,8 +46,9 @@ TEST(AttackTest, TrollTest)
     move_selection.set_selection(new Attack(troll));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "rickroll");
+    EXPECT_EQ(s.str(), "troll uses rickroll\n");
 
 }
 
@@ -57,8 +60,9 @@ TEST(AttackTest, ShrimpTest)
     move_selection.set_selection(new Attack(shrimp));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "death claw");
+    EXPECT_EQ(s.str(), "shrimp uses death claw\n");
 
 }
 
@@ -70,8 +74,9 @@ TEST(AttackTest, KnightTest)
     move_selection.set_selection(new Attack(knight));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "Slice n Dice");
+    EXPECT_EQ(s.str(), "Forbiddenator uses Slice n Dice\n");
 
 }
 
@@ -83,8 +88,9 @@ TEST(AttackTest, ArcherTest)
     move_selection.set_selection(new Attack(archer));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "Piercing Arrow");
+    EXPECT_EQ(s.str(), "Arthur uses Piercing Arrow\n");
 
 }
 
@@ -96,20 +102,24 @@ TEST(AttackTest, WizardTest)
     move_selection.set_selection(new Attack(wizard));
     
     stringstream s;
+    move_selection.print(s);
     
-    EXPECT_EQ(move_selection.print(s), "lightning spell");
+    EXPECT_EQ(s.str(), "Merlin uses lightning spell\n");
 
 }
 
-TEST(AttackTest, NullTest)
-{
-    Behavior move_selection;
-    Character* fail = nullptr;
-    
-    move_selection.set_selection(new Attack(fail));
-    
-    stringstream s;
-    
-    EXPECT_EQ(move_selection.print(s), "nullptr");
-
-}#endif
+/*
+ * TEST(AttackTest, NullTest)
+ * {
+ *     Behavior move_selection;
+ *         Character* fail = nullptr;
+ *             
+ *                 move_selection.set_selection(new Attack(fail));
+ *                     
+ *                         stringstream s;
+ *                             move_selection.print(s);
+ *                                 
+ *                                     EXPECT_TRUE(s.str() != nullptr);
+ *                                     }
+ *                                     */
+#endif
