@@ -33,7 +33,7 @@ TEST(BlockTest, GopherBlockTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "gopher uses super thick fur\n");
+    EXPECT_EQ(s.str(), " Forbidden Gopher uses super thick fur\n");
 
 }
 
@@ -47,7 +47,7 @@ TEST(BlockTest, TrollBlockTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "troll uses Club\n");
+    EXPECT_EQ(s.str(), " Troll uses Club\n");
 
 }
 
@@ -61,7 +61,7 @@ TEST(BlockTest, ShrimpBlockTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "shrimp uses Harden\n");
+    EXPECT_EQ(s.str(), " Shrimp uses Harden\n");
 
 }
 

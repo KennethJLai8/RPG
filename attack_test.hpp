@@ -34,7 +34,7 @@ TEST(AttackTest, GopherTest)
     stringstream s;
     move_selection.print(s);	
     
-    EXPECT_EQ(s.str(), "gopher uses catastrophe\n");
+    EXPECT_EQ(s.str(), " Forbidden Gopher uses catastrophe\n");
 
 }
 
@@ -48,7 +48,7 @@ TEST(AttackTest, TrollTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "troll uses rickroll\n");
+    EXPECT_EQ(s.str(), " Troll uses rickroll\n");
 
 }
 
@@ -62,7 +62,7 @@ TEST(AttackTest, ShrimpTest)
     stringstream s;
     move_selection.print(s);
     
-    EXPECT_EQ(s.str(), "shrimp uses death claw\n");
+    EXPECT_EQ(s.str(), " Shrimp uses death claw\n");
 
 }
 
